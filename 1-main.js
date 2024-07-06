@@ -9,7 +9,7 @@ const waitConnection = () => {
                 if (i >= 10) {
                     reject()
                 }
-                else if(!dbClient.isAlive()) {
+                else if (!dbClient.isAlive()) {
                     repeatFct()
                 }
                 else {
